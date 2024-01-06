@@ -27,5 +27,5 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-
-
+--If file extensions is g4 do something
+vim.cmd("autocmd BufNewFile,BufRead *.g4 set filetype=antlr")
